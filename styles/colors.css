@@ -1,0 +1,169 @@
+html {
+  /* Black and white */
+  --black: hsla(0, 0%, 1%, 1);
+  --white: hsla(0, 0%, 97%, 1);
+
+  --gray: hsla(0, 0%, 50%, 1);
+
+  --gray-light: hsla(0, 0%, 71%, 1);
+  --gray-lighter: hsla(0, 0%, 90%, 1);
+
+  --gray-dark: hsla(0, 0%, 26%, 1);
+  --gray-darker: hsla(0, 0%, 15%, 1);
+
+  /* Colors */
+
+  /* #todo replacce the light and dark with color-mix eventually */
+
+  --hue: 6;
+  --saturation: 85%;
+
+  --color: hsla(var(--hue), var(--saturation), 50%, 1);
+
+  --color-light: color-mix(
+    in hsl,
+    var(--color),
+    hsla(var(--hue), var(--saturation), 60%, 1)
+  );
+  --color-lighter: color-mix(
+    in hsl,
+    var(--color-light),
+    hsla(var(--hue), var(--saturation), 70%, 1)
+  );
+  --color-lightest: color-mix(
+    in hsl,
+    var(--color-lighter),
+    hsla(var(--hue), var(--saturation), 80%, 1)
+  );
+  --color-dark: color-mix(
+    in hsl,
+    var(--color),
+    hsla(var(--hue), var(--saturation), 40%, 1)
+  );
+  --color-darker: color-mix(
+    in hsl,
+    var(--color-dark),
+    hsla(var(--hue), var(--saturation), 30%, 1)
+  );
+  --color-darkest: color-mix(
+    in hsl,
+    var(--color-darker),
+    hsla(var(--hue), var(--saturation), 20%, 1)
+  );
+
+  --highlight-hue: calc(var(--hue) - 56);
+  --highlight-saturation: 90%;
+  --highlight: hsla(var(--highlight-hue), var(--highlight-saturation), 60%, 1);
+  --highlight-light: color-mix(
+    in hsl,
+    var(--highlight),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 100%, 1)
+  );
+  --highlight-lighter: color-mix(
+    in hsl,
+    var(--highlight-light),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 100%, 1)
+  );
+  --highlight-lightest: color-mix(
+    in hsl,
+    var(--highlight-lighter),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 100%, 1)
+  );
+  --highlight-dark: color-mix(
+    in hsl,
+    var(--highlight),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 0%, 1)
+  );
+  --highlight-darker: color-mix(
+    in hsl,
+    var(--highlight-dark),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 0%, 1)
+  );
+  --highlight-darkest: color-mix(
+    in hsl,
+    var(--highlight-darker),
+    hsla(var(--highlight-hue), var(--highlight-saturation), 0%, 1)
+  );
+
+  --tertiary-hue: calc(var(--hue) + 66);
+  --tertiary-saturation: 77%;
+  --tertiary-color: hsla(
+    var(--tertiary-hue),
+    var(--tertiary-saturation),
+    75%,
+    1
+  );
+  --tertiary-color-light: color-mix(
+    in hsl,
+    var(--tertiary-color),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 100%, 1)
+  );
+  --tertiary-color-lighter: color-mix(
+    in hsl,
+    var(--tertiary-color-light),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 100%, 1)
+  );
+  --tertiary-color-lightest: color-mix(
+    in hsl,
+    var(--tertiary-color-lighter),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 100%, 1)
+  );
+  --tertiary-color-dark: color-mix(
+    in hsl,
+    var(--tertiary-color),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 0%, 1)
+  );
+  --tertiary-color-darker: color-mix(
+    in hsl,
+    var(--tertiary-color-dark),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 0%, 1)
+  );
+  --tertiary-color-darkest: color-mix(
+    in hsl,
+    var(--tertiary-color-darker),
+    hsla(var(--tertiary-hue), var(--tertiary-saturation), 0%, 1)
+  );
+
+  --success: hsla(122, 85%, 65%, 1);
+  --warning: hsla(44, 85%, 65%, 1);
+  --error: hsla(0, 85%, 65%, 1);
+
+  /* Gradients */
+  --gradient-direction: 130deg;
+
+  --gradient-dark: linear-gradient(
+    var(--gradient-direction),
+    var(--paper) 35%,
+    var(--gray-darker)
+  );
+
+  --gradient-light: linear-gradient(
+    var(--gradient-direction),
+    var(--gray-light) 35%,
+    var(--white)
+  );
+
+  --gradient-color: linear-gradient(
+    var(--gradient-direction),
+    var(--color) 35%,
+    var(--highlight)
+  );
+
+  --paper: var(--white);
+  --ink: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+  }
+}
+
+/*@media (prefers-color-scheme: light) {
+	 html {
+		 --paper: var(--white);
+		--ink: var(--black);
+		--color-darker: var(--color-lighter);
+		--color-dark: var(--color-light); 
+	 }
+  }
+  */

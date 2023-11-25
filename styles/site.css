@@ -1,0 +1,118 @@
+/* P reset */
+@import "preset.css";
+
+/* S etup */
+@import "setup.css";
+
+/* S setings */
+@import "settings.css";
+@import "developer-styles.css";
+
+/* S tructure */
+@import "structure.css";
+
+/* T ypography */
+@import "typography.css";
+
+/* C omponents */
+@import "components.css";
+
+/* S tuff (modules) */
+@import "modules.css";
+
+/* S ections and more stuff */
+@import "utilities.css";
+
+/* then other contextual styles */
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+main inner-column {
+  /* min-height: 50vmin; */
+}
+
+header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px;
+}
+header inner-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: var(--space-l);
+}
+
+main {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+#hero {
+  background-image: url("london-crypto.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+#about {
+  text-align: center;
+}
+
+#values {
+  text-align: center;
+}
+
+#values ul {
+  display: grid;
+  gap: var(--space-m);
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#values li {
+  background-color: var(--gray-lighter);
+  padding: var(--space-m);
+  border-radius: var(--corners);
+  box-shadow: var(--shadow);
+}
+
+#join inner-column {
+  background-color: var(--black);
+  color: var(--paper);
+  padding: var(--space-m);
+  border-radius: var(--corners);
+  box-shadow: var(--shadow);
+  text-align: center;
+
+  display: grid;
+  gap: var(--space-2xs);
+  justify-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer inner-column {
+  display: grid;
+  gap: var(--space-m);
+  justify-items: start;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+} */

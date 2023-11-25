@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LondonDAO - Building London's Cryptocurrency Scene</title>
-    <link rel="stylesheet" href="Styling.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/site.css" />
+  </head>
+  <body>
     <header>
+      <inner-column
+        ><picture class="logo">
+          <img
+            src="Assets/resized_square_LdnDAO_logo (1).png"
+            alt="LondonDAO Logo"
+          />
+        </picture>
+
         <nav>
-            <div id="logo">
-                <img src="Assets/resized_square_LdnDAO_logo (1).png" alt="LondonDAO Logo">
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#values">Values</a></li>
-                <li><a href="#join">Join Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+          <ul>
+            <li><a class="text" href="#about">About</a></li>
+            <li><a class="text" href="#values">Values</a></li>
+            <li><a class="text" href="#join">Join Us</a></li>
+            <li><a class="text" href="#contact">Contact</a></li>
+          </ul>
+        </nav></inner-column
+      >
     </header>
 
-    <section id="hero">
-        <h1>Welcome to LondonDAO
-            </h1>
-        <p>Shaping the Future of Cryptocurrency in London</p>
-    </section>
+    <main>
+      <section id="hero">
+        <inner-column>
+          <h1 class="booming-voice">Welcome to LondonDAO</h1>
+          <p class="notice-voice">
+            Shaping the Future of Cryptocurrency in London
+          </p>
+        </inner-column>
+      </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>LondonDAO is a community-led initiative aimed at building and strengthening the cryptocurrency scene in London.</p>
-    </section>
+      <section id="about">
+        <inner-column>
+          <h2 class="loud-voice">About Us</h2>
+          <p class="notice-voice">
+            LondonDAO is a community-led initiative aimed at building and
+            strengthening the cryptocurrency scene in London.
+          </p>
+        </inner-column>
+      </section>
 
-    <section id="values">
-        <h2>Our Core Values</h2>
-        <div class="value">
-            <h3>Focus on Crypto Policy</h3>
-            <p>We aim to shape and influence cryptocurrency policies that facilitate innovation and growth.</p>
-        </div>
-        <div class="value">
-            <h3>Building the Community</h3>
-            <p>Connecting London's crypto enthusiasts, developers, investors, and pioneers to foster innovation and collaboration.</p>
-        </div>
-        <div class="value">
-            <h3>Welcoming Global Businesses</h3>
-            <p>Creating a hospitable environment for global crypto businesses to establish, collaborate, and thrive in London.</p>
-        </div>
-    </section>
+      <section id="values">
+        <inner-column>
+          <h2 class="loud-voice">Our Core Values</h2>
+          <ul>
+            <li class="value">
+              <h3 class="firm-voice">Focus on Crypto Policy</h3>
+              <p>
+                We aim to shape and influence cryptocurrency policies that
+                facilitate innovation and growth.
+              </p>
+            </li>
+            <li class="value">
+              <h3 class="firm-voice">Building the Community</h3>
+              <p>
+                Connecting London's crypto enthusiasts, developers, investors,
+                and pioneers to foster innovation and collaboration.
+              </p>
+            </li>
+            <li class="value">
+              <h3 class="firm-voice">Welcoming Global Businesses</h3>
+              <p>
+                Creating a hospitable environment for global crypto businesses
+                to establish, collaborate, and thrive in London.
+              </p>
+            </li>
+          </ul>
+        </inner-column>
+      </section>
 
-    <section id="join">
-        <h2>Join LondonDAO</h2>
-        <p>Become a part of a vetted community that is spearheading the development of the London cryptocurrency scene.</p>
-        <a href="apply.html" class="button">Apply Now</a>
-    </section>
+      <section id="join">
+        <inner-column>
+          <h2 class="loud-voice">Join LondonDAO</h2>
+          <p class="notice-voice">
+            Become a part of a vetted community that is spearheading the
+            development of the London cryptocurrency scene.
+          </p>
+          <div class="actions">
+            <a href="apply.html" class="button firm-voice">Apply Now</a>
+          </div>
+        </inner-column>
+      </section>
+    </main>
 
     <footer>
-        <section id="contact">
-            <h2>Contact Us </h2>
-            <p>Have questions? Say hello to us by emailing  <a href="mailto:[Hello@ldnDAO.org]">LondonDAO</a></p>
-        </section>
+		 <inner-column>
+      <section id="contact">
+          <h2 class="firm-voice">Contact Us</h2>
+          <p>
+            Have questions? Say hello to us by emailing
+            <a class="text" href="mailto:[Hello@ldnDAO.org]">LondonDAO</a>
+          </p>
+      </section>
 
-        <section id="socials">
-            <h2>Follow Us</h2>
-            <a href="https://twitter.com/londondao" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/londondao" target="_blank">LinkedIn</a>
-        </section>
+      <section id="socials">
+          <h2 class="firm-voice">Follow Us</h2>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  class="text"
+                  href="https://twitter.com/londondao"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text"
+                  href="https://linkedin.com/londondao"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </inner-column>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
